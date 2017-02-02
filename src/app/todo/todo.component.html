@@ -1,0 +1,19 @@
+<section>
+  <header>
+    <h1>
+      Todos!
+      新しいTodo:<input let new-todo>
+      <!-- <button (click)="enterTodo(newTodo)">追加</button> -->
+    </h1>
+  </header>
+  <div>
+    <ul *ng-for="let todo of todos; #i = index">
+      <li>
+        {{i+1}}. {{todo.title}}
+      </li>
+    </ul>
+  </div>
+</section>
+<footer>
+  Created by sumi-hiro
+</footer>
